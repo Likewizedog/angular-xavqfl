@@ -21,4 +21,12 @@ export class HeroesComponent implements OnInit {
     this.selectedHero = hero;
   }
 
+  clearSelect(): void {
+    this.selectedHero = null;
+  }
+
+  saveName(): void{
+    this.selectedHero.name = "PP";
+  }
+
 }

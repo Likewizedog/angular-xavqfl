@@ -5,6 +5,8 @@
   </li>
 </ul>
 
+<button (click)="clearSelect()">Clear</button>
+
 <div *ngIf="selectedHero">
   <h2>{{selectedHero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{selectedHero.id}}</div>
@@ -12,5 +14,6 @@
     <label>name:
       <input [(ngModel)]="selectedHero.name" placeholder="name"/>
     </label>
+    <button (click)="saveName()">Save</button>
   </div>
 </div>
